@@ -259,11 +259,13 @@ body {
   .fylo .container .fylo__cpanel {
     margin: auto;
     margin-bottom: 15px;
-    width: 100%;
+    width: 350px;
+    max-width: 100%;
   }
   .fylo .container .fylo__storageStatus {
     margin: auto;
-    width: 100%;
+    width: 350px;
+    max-width: 100%;
   }
   .fylo .container .fylo__storageStatus .alert {
     text-align: center;
