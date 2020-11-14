@@ -1,0 +1,287 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+/*Variables*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-moz-selection {
+  background-color: #ffa399;
+  color: #fff;
+}
+
+::selection {
+  background-color: #ffa399;
+  color: #fff;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+.fylo {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0c122c;
+  background-image: url(../images/bg-desktop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.fylo .container {
+  width: 95%;
+  max-width: 920px;
+  position: relative;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fylo .container .fylo__cpanel {
+  width: 350px;
+  max-width: 90%;
+  margin-right: 30px;
+  padding: 40px;
+  display: block;
+  background: #1d2c67;
+  border-radius: 20px 90px 20px 20px;
+}
+
+.fylo .container .fylo__cpanel .icons {
+  width: 100%;
+  margin: 33px 0 0 0;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fylo .container .fylo__cpanel .icons .icon {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0c122c;
+  border-radius: 7px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.fylo .container .fylo__cpanel .icons .icon:hover {
+  opacity: 0.5;
+}
+
+.fylo .container .gb-left {
+  position: absolute;
+  right: 40px;
+  top: 8px;
+  padding: 15px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border-radius: 7px 7px 0 7px;
+  z-index: 999;
+}
+
+.fylo .container .gb-left::after {
+  content: '';
+  position: absolute;
+  border-top: 30px solid #fff;
+  border-left: 30px solid transparent;
+  bottom: -19px;
+  right: 0;
+}
+
+.fylo .container .gb-left h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #0c122c;
+}
+
+.fylo .container .gb-left h5 {
+  font-weight: 700;
+  color: #848794;
+  margin-left: 10px;
+}
+
+.fylo .container .fylo__storageStatus {
+  width: 540px;
+  max-width: 90%;
+  position: relative;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 40px;
+  background-color: #1d2c67;
+  border-radius: 20px;
+}
+
+.fylo .container .fylo__storageStatus .alert {
+  color: #fff;
+  font-weight: 400;
+}
+
+.fylo .container .fylo__storageStatus .alert span {
+  font-weight: 700;
+}
+
+.fylo .container .fylo__storageStatus .statusBar {
+  width: 100%;
+  height: 15px;
+  margin: 15px 0;
+  background-color: #0c122c;
+  border: 2px solid #0c122c;
+  border-radius: 20px;
+  cursor: no-drop;
+}
+
+.fylo .container .fylo__storageStatus .statusBar .progress {
+  width: 75.555%;
+  height: 11px;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffa399), to(#ff4d97));
+  background: linear-gradient(#ffa399, #ff4d97);
+  border-radius: 20px;
+  -webkit-animation: progress 2s ease;
+          animation: progress 2s ease;
+}
+
+.fylo .container .fylo__storageStatus .statusBar .progress::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 40%;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+  right: 1px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes progress {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 75.555%;
+    opacity: 1;
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 75.555%;
+    opacity: 1;
+  }
+}
+
+.fylo .container .fylo__storageStatus .gigabytes {
+  width: 100%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fylo .attribution {
+  position: absolute;
+  margin: 1rem 0;
+  bottom: 0;
+  font-size: 11px;
+  color: #fff;
+  text-align: center;
+}
+
+.fylo .attribution a {
+  color: #ffa399;
+}
+
+@media screen and (max-width: 700px) {
+  .fylo {
+    background-image: url(../images/bg-mobile.png);
+    background-size: cover;
+    background-position: top left;
+  }
+  .fylo .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fylo .container .fylo__cpanel {
+    margin: auto;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .fylo .container .fylo__storageStatus {
+    margin: auto;
+    width: 100%;
+  }
+  .fylo .container .fylo__storageStatus .alert {
+    text-align: center;
+  }
+  .fylo .container .gb-left {
+    position: relative;
+    width: 160px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 50%;
+    top: -30px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border-radius: 7px;
+  }
+  .fylo .container .gb-left::after {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
